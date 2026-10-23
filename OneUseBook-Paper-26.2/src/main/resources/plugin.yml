@@ -1,0 +1,16 @@
+name: OneUseBook
+version: '1.0.0'
+main: me.rosey.oneusebook.OneUseBook
+api-version: '26.2'
+description: Lets an operator authorize a signed command book that runs its commands as console once globally.
+author: Rosey
+commands:
+  oneusebook:
+    description: Bind a signed command book for one-time console execution
+    usage: /oneusebook bind
+    aliases: [oub]
+    permission: oneusebook.admin
+permissions:
+  oneusebook.admin:
+    description: Allows binding signed command books
+    default: op
